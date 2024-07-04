@@ -1,0 +1,36 @@
+<table class="table table-striped">
+
+    <thead>
+
+        <tr>
+            <th>ID</th>
+            <th>name</th>
+            <th>Name</th>
+            <th>age</th>
+            <th>blood</th>
+            <th> prescription</th>
+            <th>dose</th>
+            <th>urgency</th>
+
+
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngForm="let patient of patients">
+            <td> {{patient.ID}}</td>
+            <td> {{patient.Name}}</td>
+            <td> {{patient.Age}}</td>
+            <td> {{patient.blood}}</td>
+            <td> {{patient.prescription}}</td>
+            <td> {{patient.dose}}</td>
+            <td> {{patient.urgency}}</td>
+        </tr>
+
+    </tbody>
+
+
+
+
+
+</table>
